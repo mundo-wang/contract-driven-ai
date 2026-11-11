@@ -127,22 +127,22 @@ contract-driven-ai/
 │   └── 03-整体流程时序图.md            # 各阶段时序图（图片形式）
 ├── skills/                            # 面向 AI Agent 的 Agent Skill
 │   ├── README.md                      # Skill 使用指南
-│   ├── skill-01-project-context-initialization.md
-│   ├── skill-02-requirement-level-evaluation.md
-│   ├── skill-03-l1-lightweight-delivery.md
-│   ├── skill-04-product-contract-writing.md
-│   ├── skill-05-backend-technical-contract-writing.md
-│   ├── skill-06-backend-test-contract-writing.md
-│   ├── skill-07-backend-contract-review.md
-│   ├── skill-08-backend-code-development.md
-│   ├── skill-09-backend-api-automation-testing.md
-│   ├── skill-10-backend-delivery-review.md
-│   ├── skill-11-frontend-technical-contract-writing.md
-│   ├── skill-12-frontend-test-contract-writing.md
-│   ├── skill-13-frontend-contract-review.md
-│   ├── skill-14-frontend-code-development.md
-│   ├── skill-15-frontend-page-automation-testing.md
-│   └── skill-16-frontend-delivery-review.md
+│   ├── skill-01-项目上下文初始化.md
+│   ├── skill-02-需求等级判定.md
+│   ├── skill-03-L1轻量级交付.md
+│   ├── skill-04-产品契约编写.md
+│   ├── skill-05-后端技术契约.md
+│   ├── skill-06-后端测试契约.md
+│   ├── skill-07-后端契约审查.md
+│   ├── skill-08-后端代码开发.md
+│   ├── skill-09-后端接口测试.md
+│   ├── skill-10-后端交付审查.md
+│   ├── skill-11-前端技术契约.md
+│   ├── skill-12-前端测试契约.md
+│   ├── skill-13-前端契约审查.md
+│   ├── skill-14-前端代码开发.md
+│   ├── skill-15-前端页面测试.md
+│   └── skill-16-前端交付审查.md
 └── images/                            # 时序图等图片资源
 ```
 
@@ -157,15 +157,15 @@ contract-driven-ai/
 
 ### 新项目从零开始
 
-1. **项目上下文初始化**：让 AI 读取 [skill-01](skills/skill-01-project-context-initialization.md)，完成项目上下文文档的建立
-2. **需求沟通与等级判定**：让 AI 读取 [skill-02](skills/skill-02-requirement-level-evaluation.md)，判定需求等级
+1. **项目上下文初始化**：让 AI 读取 [skill-01](skills/skill-01-项目上下文初始化.md)，完成项目上下文文档的建立
+2. **需求沟通与等级判定**：让 AI 读取 [skill-02](skills/skill-02-需求等级判定.md)，判定需求等级
 3. **按等级选择流程**：
-   - **L1**：使用 [skill-03](skills/skill-03-l1-lightweight-delivery.md) 执行轻量级交付
+   - **L1**：使用 [skill-03](skills/skill-03-L1轻量级交付.md) 执行轻量级交付
    - **L2/L3**：依次使用 skill-04 至 skill-16 执行完整交付流程
 
 ### 存量项目接入
 
-1. 先让 AI 读取 [skill-01](skills/skill-01-project-context-initialization.md)，分析现有代码并生成项目上下文文档
+1. 先让 AI 读取 [skill-01](skills/skill-01-项目上下文初始化.md)，分析现有代码并生成项目上下文文档
 2. 开发者审核、修正项目上下文，确保准确
 3. 后续流程与新项目一致
 
