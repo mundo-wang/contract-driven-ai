@@ -124,7 +124,8 @@ contract-driven-ai/
 ├── docs/                              # 面向开发者的核心文档
 │   ├── 01-核心理念与流程.md            # 完整的方法论阐述与流程详解
 │   ├── 02-契约文档体系.md              # 契约目录结构、内容规范及裁剪规则
-│   └── 03-整体流程时序图.md            # 各阶段时序图（图片形式）
+│   ├── 03-整体流程时序图.md            # 各阶段时序图（图片形式）
+│   └── image/                         # 时序图图片
 ├── skills/                            # 面向 AI Agent 的 Agent Skill
 │   ├── README.md                      # Skill 使用指南
 │   ├── skill-01-项目上下文初始化.md
@@ -143,7 +144,7 @@ contract-driven-ai/
 │   ├── skill-14-前端代码开发.md
 │   ├── skill-15-前端页面测试.md
 │   └── skill-16-前端交付审查.md
-└── images/                            # 时序图等图片资源
+└── .gitignore
 ```
 
 **阅读建议**：
