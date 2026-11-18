@@ -128,6 +128,8 @@ contract-driven-ai/
 │   └── image/                         # 时序图图片
 ├── skills/                            # 面向 AI Agent 的 Agent Skill
 │   ├── README.md                      # Skill 使用指南
+│   ├── skill-00-PreExecutionAnalysis.md # 全局 Skill：前置分析反问
+│   ├── skill-00-AgentCommitReport.md    # 全局 Skill：Agent 提交报告规范
 │   ├── skill-01-项目上下文初始化.md
 │   ├── skill-02-需求等级判定.md
 │   ├── skill-03-L1轻量级交付.md
@@ -199,4 +201,4 @@ contract-driven-ai/
 | [docs/01-核心理念与流程.md](docs/01-核心理念与流程.md) | 完整阐述契约驱动式 AI 开发的背景、核心理念、交付流程及各阶段详细要求 |
 | [docs/02-契约文档体系.md](docs/02-契约文档体系.md) | 交付契约的目录结构、项目上下文规范、三类契约的内容模板及需求等级裁剪规则 |
 | [docs/03-整体流程时序图.md](docs/03-整体流程时序图.md) | 项目上下文初始化、后端独立交付、前端独立交付三个阶段的时序图 |
-| [skills/README.md](skills/README.md) | 16 个 Agent Skill 的使用指南与编排说明 |
+| [skills/README.md](skills/README.md) | 18 个 Agent Skill 的使用指南与编排说明 |

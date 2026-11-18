@@ -1,6 +1,6 @@
 # Agent Skill 使用指南
 
-本目录包含契约驱动式 AI 开发所需的 16 个 Agent Skill。每个 Skill 均为独立、完整的 AI 行为规范文件，AI Agent 可在对应环节直接读取并执行。
+本目录包含契约驱动式 AI 开发所需的 18 个 Agent Skill（16 个业务 Skill + 2 个全局 Skill）。每个 Skill 均为独立、完整的 AI 行为规范文件，AI Agent 可在对应环节直接读取并执行。
 
 ---
 
@@ -15,6 +15,19 @@ Agent Skill 是一份结构化的 AI 行为规范，定义了 AI 在特定任务
 - **完成标准**：任务结束必须满足的检查项
 
 每个 Skill 均独立成文，可在指定仓库后直接读取执行，也可将其完整内容复制粘贴至 AI 对话窗口中使用。
+
+---
+
+## 全局 Skill
+
+全局 Skill 不绑定特定业务环节，在所有 Skill 执行过程中按需引用，统一约束跨环节行为：
+
+| Skill | 名称 | 说明 |
+|-------|------|------|
+| [PreExecutionAnalysis](skill-00-PreExecutionAnalysis.md) | 前置分析反问 | 所有 Skill 开展实质性工作前，必须完成资料研读、不确定性识别、多轮澄清及执行前声明，获得开发者确认后方可执行 |
+| [AgentCommitReport](skill-00-AgentCommitReport.md) | Agent 提交报告规范 | 规范 Agent 修改项目文件后的变更报告、代码检查及 Git 提交授权流程，保护开发者已有修改，禁止未经授权的提交和推送 |
+
+**引用方式**：各业务 Skill 的「执行前提」中明确要求「执行本 Skill 前，必须先应用全局 Skill『PreExecutionAnalysis』」；AgentCommitReport 则在 Agent 实际修改文件时由模型自行触发。
 
 ---
 
@@ -108,6 +121,13 @@ Agent Skill 是一份结构化的 AI 行为规范，定义了 AI 在特定任务
 
 ## Skill 清单
 
+### 全局 Skill
+
+| Skill | 名称 | 说明 |
+|-------|------|------|
+| [PreExecutionAnalysis](skill-00-PreExecutionAnalysis.md) | 前置分析反问 | 所有 Skill 开展实质性工作前必须执行的前置流程 |
+| [AgentCommitReport](skill-00-AgentCommitReport.md) | Agent 提交报告规范 | 规范 Agent 文件修改后的变更报告与 Git 提交授权流程 |
+
 ### 项目与需求阶段
 
 | Skill | 名称 | 说明 |
@@ -157,7 +177,7 @@ Agent Skill 是一份结构化的 AI 行为规范，定义了 AI 在特定任务
 
 ### 前置要求
 
-每个 Skill 均定义了「执行前提」和「前置分析反问」环节。AI 在开始执行前，必须先完成资料分析和不确定点识别，向开发者提问确认后方可继续。开发者不应跳过这一环节。
+每个 Skill 均定义了「执行前提」，并要求在执行前应用全局 Skill「PreExecutionAnalysis」完成前置分析反问流程。AI 在开始实质性工作前，必须先完成资料研读、不确定性识别、多轮澄清及执行前声明，获得开发者明确确认后方可继续。开发者不应跳过这一环节。
 
 ---
 
